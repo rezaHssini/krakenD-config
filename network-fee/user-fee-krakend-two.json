@@ -1,8 +1,8 @@
 {
   "version": 2,
   "extra_config": {},
-  "timeout": "3000ms",
-  "cache_ttl": "300s",
+  "timeout": "1500ms",
+  "cache_ttl": "30s",
   "endpoints": [
     {
       "endpoint": "/network-fee/{network}/assets/{token}",
