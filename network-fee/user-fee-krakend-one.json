@@ -1,0 +1,160 @@
+{
+  "version": 2,
+  "extra_config": {},
+  "timeout": "15000ms",
+  "cache_ttl": "30s",
+  "endpoints": [
+    {
+      "endpoint": "/network-fee/eth/assets/eth",
+      "method": "GET",
+      "output_encoding": "json",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/eth",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/usdt",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/usdt",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/usdc",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/usdc",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/trx/assets/trx",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/trx/network-fee/trx",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/trx/assets/usdt",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/trx/network-fee/usdt",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/xrp/assets/xrp",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/xrp/network-fee/xrp",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/btc/assets/btc",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/btc/network-fee/btc",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/ltc/assets/ltc",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/ltc/network-fee/ltc",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/dash/assets/dash",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/dash/network-fee/dash",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/dot/assets/dot",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/dot/network-fee/dot",
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    }
+  ],
+  "output_encoding": "json"
+}
