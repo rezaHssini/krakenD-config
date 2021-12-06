@@ -12,6 +12,9 @@
       "backend": [
         {
           "url_pattern": "/eth/network-fee/eth",
+          "host": [
+            "http://eth-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -27,6 +30,9 @@
       "backend": [
         {
           "url_pattern": "/eth/network-fee/usdt",
+          "host": [
+            "http://eth-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -42,6 +48,9 @@
       "backend": [
         {
           "url_pattern": "/eth/network-fee/usdc",
+          "host": [
+            "http://eth-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -57,6 +66,9 @@
       "backend": [
         {
           "url_pattern": "/trx/network-fee/trx",
+          "host": [
+            "http://trx-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -72,6 +84,9 @@
       "backend": [
         {
           "url_pattern": "/trx/network-fee/usdt",
+          "host": [
+            "http://trx-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -87,6 +102,9 @@
       "backend": [
         {
           "url_pattern": "/xrp/network-fee/xrp",
+          "host": [
+            "http://xrp-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -102,6 +120,9 @@
       "backend": [
         {
           "url_pattern": "/btc/network-fee/btc",
+          "host": [
+            "http://btc-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -117,6 +138,9 @@
       "backend": [
         {
           "url_pattern": "/ltc/network-fee/ltc",
+          "host": [
+            "http://ltc-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -132,6 +156,9 @@
       "backend": [
         {
           "url_pattern": "/dash/network-fee/dash",
+          "host": [
+            "http://dash-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
@@ -147,6 +174,9 @@
       "backend": [
         {
           "url_pattern": "/dot/network-fee/dot",
+          "host": [
+            "http://dot-transactions.dev-local:8080"
+          ],
           "encoding": "json",
           "method": "GET",
           "extra_config": {
