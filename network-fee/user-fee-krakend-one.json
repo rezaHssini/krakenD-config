@@ -67,7 +67,7 @@
         {
           "url_pattern": "/trx/network-fee/trx",
           "host": [
-            "http://trx-transactions.dev-local:8080"
+            "http://tron-transactions.dev-local:8080"
           ],
           "encoding": "json",
           "method": "GET",
@@ -85,7 +85,7 @@
         {
           "url_pattern": "/trx/network-fee/usdt",
           "host": [
-            "http://trx-transactions.dev-local:8080"
+            "http://tron-transactions.dev-local:8080"
           ],
           "encoding": "json",
           "method": "GET",
@@ -175,7 +175,7 @@
         {
           "url_pattern": "/dot/network-fee/dot",
           "host": [
-            "http://dot-transactions.dev-local:8080"
+            "http://polkadot-transactions.dev-local:8080"
           ],
           "encoding": "json",
           "method": "GET",
