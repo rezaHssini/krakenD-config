@@ -58,7 +58,7 @@ pipelines:
                make slack-notification MESSAGE="deploy to crypto-krakend was FAILED.";
                exit 1;
                fi
-    staging:
+    {stage,staging}:
       - step:
           name: SonarQube analysis
           image: sonarsource/sonar-scanner-cli:4.6
