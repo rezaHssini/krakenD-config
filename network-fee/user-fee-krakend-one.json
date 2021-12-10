@@ -59,6 +59,60 @@
         }
       ]
     },
+     {
+      "endpoint": "/network-fee/eth/assets/sand",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/sand",
+          "host": [
+            "http://eth-transactions.dev-local:8080"
+          ],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/mana",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/mana",
+          "host": [
+            "http://eth-transactions.dev-local:8080"
+          ],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/link",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/link",
+          "host": [
+            "http://eth-transactions.dev-local:8080"
+          ],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
     {
       "endpoint": "/network-fee/trx/assets/trx",
       "method": "GET",
