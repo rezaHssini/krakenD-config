@@ -1,0 +1,218 @@
+{
+  "version": 2,
+  "extra_config": {},
+  "timeout": "15000ms",
+  "cache_ttl": "30s",
+  "endpoints": [
+    {
+      "endpoint": "/network-fee/eth/assets/eth",
+      "method": "GET",
+      "output_encoding": "json",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/eth",
+          "host": ["http://eth-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/usdt",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/usdt",
+          "host": ["http://eth-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/usdc",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/usdc",
+          "host": ["http://eth-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/sand",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/sand",
+          "host": ["http://eth-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/mana",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/mana",
+          "host": ["http://eth-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/eth/assets/link",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/eth/network-fee/link",
+          "host": ["http://eth-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/trx/assets/trx",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/trx/network-fee/trx",
+          "host": ["http://tron-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/trx/assets/usdt",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/trx/network-fee/usdt",
+          "host": ["http://tron-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/xrp/assets/xrp",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/xrp/network-fee/xrp",
+          "host": ["http://xrp-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/btc/assets/btc",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/btc/network-fee/btc",
+          "host": ["http://btc-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/ltc/assets/ltc",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/ltc/network-fee/ltc",
+          "host": ["http://ltc-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/dash/assets/dash",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/dash/network-fee/dash",
+          "host": ["http://dash-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    },
+    {
+      "endpoint": "/network-fee/dot/assets/dot",
+      "method": "GET",
+      "extra_config": {},
+      "backend": [
+        {
+          "url_pattern": "/dot/network-fee/dot",
+          "host": ["http://polkadot-transactions.stage-local:8080"],
+          "encoding": "json",
+          "method": "GET",
+          "extra_config": {
+            "github.com/devopsfaith/krakend-httpcache": {}
+          }
+        }
+      ]
+    }
+  ],
+  "output_encoding": "json"
+}
