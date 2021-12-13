@@ -1,0 +1,26 @@
+{
+    "version": {{.service.version}},
+    "extra_config": {{ marshal .service.extra_config }},
+    "timeout": {{.service.timeout}},
+    "cache_ttl": {{.service.cache_ttl}},
+    "endpoints": [
+        {{ range $idx, $endpoint := .endpoint.endpoints_group }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "json",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "json",
+                "host":"{{ $endpoint.host }}",
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+        ]
+        {{ end }}
+    ]
+}
