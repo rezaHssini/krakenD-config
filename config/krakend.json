@@ -3,7 +3,7 @@
     "extra_config": {},
     "timeout": "15000ms",
     "cache_ttl": "30s",
-    "port":"7070",
+    "port":"8080",
     "endpoints": [
         {{ range $idx, $endpoint := .endpoint.endpoints_group }}
         {{if $idx}},{{end}}
