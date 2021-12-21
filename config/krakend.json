@@ -5,7 +5,7 @@
     "cache_ttl": "30s",
     "port":"7070",
     "endpoints": [
-        {{ range $idx, $endpoint := .endpoint.endpoints_group }}
+        {{ range $idx, $endpoint := .endpoints.endpoints_group }}
         {{if $idx}},{{end}}
         {
         "endpoint": "{{ $endpoint.endpoint }}",
@@ -21,8 +21,8 @@
                     {{ include "rate_limit_backend.tmpl" }}
                 }
             }
-        ]
-    }
+          ]
+        }
         {{ end }}
     ]
 }

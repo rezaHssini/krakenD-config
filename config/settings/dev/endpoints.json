@@ -213,37 +213,6 @@
       "backend": "/dot/withdraw",
       "method": "POST",
       "host": ["http://polkadot-transactions.dev-local:8080"]
-    },
-
-    {
-      "endpoint": "/spot-wallet/addresses",
-      "backend": "/spot-wallet/addresses",
-      "method": "POST",
-      "host": ["spot-wallet.dev-local:8080"]
-    },
-    {
-      "endpoint": "/spot-wallet/addresses/{coin}/{address}",
-      "backend": "/spot-wallet/addresses/{coin}/{address}",
-      "method": "GET",
-      "host": ["spot-wallet.dev-local:8080"]
-    },
-    {
-      "endpoint": "/spot-wallet/addresses/addresses/{user_id}",
-      "backend": "/spot-wallet/addresses/addresses/{user_id}",
-      "method": "GET",
-      "host": ["spot-wallet.dev-local:8080"]
-    },
-    {
-      "endpoint": "/spot-wallet/addresses/addresses/{coin}/user/{user_id}",
-      "backend": "/spot-wallet/addresses/addresses/{coin}/user/{user_id}",
-      "method": "GET",
-      "host": ["spot-wallet.dev-local:8080"]
-    },
-    {
-      "endpoint": "/spot-wallet/addresses",
-      "backend": "/spot-wallet/addresses",
-      "method": "POST",
-      "host": ["spot-wallet.dev-local:8080"]
     }
   ]
 }
