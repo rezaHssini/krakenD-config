@@ -214,7 +214,6 @@
           "method": "POST",
           "host": ["http://polkadot-transactions.stage-local:8080"]
         },
-  
         {
           "endpoint": "/spot-wallet/addresses",
           "backend": "/spot-wallet/addresses",
@@ -222,27 +221,21 @@
           "host": ["spot-wallet.stage-local:8080"]
         },
         {
-          "endpoint": "/spot-wallet/addresses/{coin}/{address}",
-          "backend": "/spot-wallet/addresses/{coin}/{address}",
+          "endpoint": "/spot-wallet/addresses/{coin_or_user}/{address}",
+          "backend": "/spot-wallet/addresses/{coin_or_user}/{address}",
           "method": "GET",
           "host": ["spot-wallet.stage-local:8080"]
         },
         {
-          "endpoint": "/spot-wallet/addresses/addresses/{user_id}",
-          "backend": "/spot-wallet/addresses/addresses/{user_id}",
+          "endpoint": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
+          "backend": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
           "method": "GET",
           "host": ["spot-wallet.stage-local:8080"]
         },
         {
-          "endpoint": "/spot-wallet/addresses/addresses/{coin}/user/{user_id}",
-          "backend": "/spot-wallet/addresses/addresses/{coin}/user/{user_id}",
+          "endpoint": "/spot-wallet/addresses/{coin_or_user}",
+          "backend": "/spot-wallet/addresses/{coin_or_user}",
           "method": "GET",
-          "host": ["spot-wallet.stage-local:8080"]
-        },
-        {
-          "endpoint": "/spot-wallet/addresses",
-          "backend": "/spot-wallet/addresses",
-          "method": "POST",
           "host": ["spot-wallet.stage-local:8080"]
         }
     ]
