@@ -218,19 +218,19 @@
       "endpoint": "/spot-wallet/addresses",
       "backend": "/spot-wallet/addresses",
       "method": "POST",
-      "host": ["spot-wallet.stage-local:8080"]
+      "host": ["spot-wallet.dev-local:8080"]
     },
     {
       "endpoint": "/spot-wallet/addresses/{coin_or_user}/{address}",
       "backend": "/spot-wallet/addresses/{coin_or_user}/{address}",
       "method": "GET",
-      "host": ["spot-wallet.stage-local:8080"]
+      "host": ["spot-wallet.dev-local:8080"]
     },
     {
       "endpoint": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
       "backend": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
       "method": "GET",
-      "host": ["spot-wallet.stage-local:8080"]
+      "host": ["spot-wallet.dev-local:8080"]
     },
     {
       "endpoint": "/spot-wallet/addresses/{coin_or_user}",
