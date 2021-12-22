@@ -5,7 +5,7 @@ define run-tests
 endef
 
 define build_common
-	docker build -t ${DOCKER_REGISTRY}/nanos/$(2):$(1) -f $(3) .
+	docker build --build-arg BUILD_ENV=$(1) -t ${DOCKER_REGISTRY}/nanos/$(2):$(1) -f $(3) .
 	docker tag ${DOCKER_REGISTRY}/nanos/$(2):$(1) $(2)_local_go:latest
 	docker save -o tmp-$(1)-$(2)-image.docker ${DOCKER_REGISTRY}/nanos/$(2):$(1)
 endef
