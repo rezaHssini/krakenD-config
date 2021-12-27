@@ -1,6 +1,9 @@
 {
     "version": 2,
-    "extra_config": {},
+    "plugin": {
+        "pattern":".so",
+        "folder": "plugins/"
+    },
     "timeout": "15000ms",
     "cache_ttl": "30s",
     "port":"8080",
@@ -24,5 +27,19 @@
           ]
         }
         {{ end }}
-    ]
+    ],
+    "extra_config": {
+        "github_com/devopsfaith/krakend/transport/http/server/handler": {
+            "name": [ "krakend-basic-auth" ],
+            "krakend-basic-auth": {
+                "htpasswd_path": "{{ .service.path_to_htpasswd }}",
+                "endpoints": [
+                    {{ range $idx, $endpoint := .endpoints.endpoints_group }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ]
+            }  
+       }
+    }
 }
