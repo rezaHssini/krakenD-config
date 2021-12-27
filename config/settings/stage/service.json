@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "extra_config": {},
+    "timeout": "15000ms",
+    "cache_ttl": "30s"
+  }
