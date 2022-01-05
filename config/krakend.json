@@ -13,12 +13,12 @@
         {
         "endpoint": "{{ $endpoint.endpoint }}",
         "method":"{{ $endpoint.method }}",
-        "output_encoding": "json",
+        "output_encoding": "no-op",
         "backend": [
             {
                 "url_pattern": "{{ $endpoint.backend }}",
                 "method":"{{ $endpoint.method }}",
-                "encoding": "json",
+                "encoding": "no-op",
                 "host":"{{ $endpoint.host }}",
                 "extra_config": {
                     {{ include "rate_limit_backend.tmpl" }}
