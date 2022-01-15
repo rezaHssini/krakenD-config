@@ -1,0 +1,149 @@
+options:
+  docker: true
+clone:
+  depth: full
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: SonarQube analysis
+          image: sonarsource/sonar-scanner-cli:4.6
+          caches:
+            - sonar
+          script:
+            - sonar-scanner -Dsonar.projectKey=${BITBUCKET_REPO_SLUG} -Dsonar.pullrequest.key=${BITBUCKET_PR_ID} -Dsonar.pullrequest.branch=${BITBUCKET_BRANCH} -Dsonar.pullrequest.base=${BITBUCKET_PR_DESTINATION_BRANCH}
+  # Pipelines that run automatically on a commit to a branch
+  branches:
+    develop:
+      - step:
+          name: SonarQube analysis
+          image: sonarsource/sonar-scanner-cli:4.6
+          caches:
+            - sonar
+          script:
+            - sonar-scanner -Dsonar.projectKey=${BITBUCKET_REPO_SLUG} -Dsonar.branch.name=${BITBUCKET_BRANCH}
+      - parallel:
+        - step:
+            name: Build crypto-krakend develop
+            deployment: build-crypto-krakend-dev
+            image: python:3.9
+            caches:
+              - pip
+              - docker
+            script:
+              # build dev image and notify to slack
+              - if make build-app ECR_NAME=crypto-krakend DOCKERFILE_NAME=Dockerfile; then
+                make slack-notification MESSAGE="Image for crypto-krakend was SUCCESSFULLY built.";
+                else
+                make slack-notification MESSAGE="Build of image for crypto-krakend was FAILED.";
+                exit 1;
+                fi
+            artifacts:
+              - tmp-dev-crypto-krakend-image.docker
+      - parallel:
+        - step:
+            name: Auto-deploy crypto-krakend to develop
+            deployment: deploy-crypto-krakend-dev
+            image: python:3.9
+            caches:
+              - pip
+            script:
+              - pip install awscli --upgrade
+              # deploy app to dev and notify to slack
+              - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+              - if make push-app ECR_NAME=crypto-krakend && make deploy-app; then
+               make slack-notification MESSAGE="deploy to crypto-krakend was SUCCESSFULL.";
+               else
+               make slack-notification MESSAGE="deploy to crypto-krakend was FAILED.";
+               exit 1;
+               fi
+    '{stage,staging}':
+      - step:
+          name: SonarQube analysis
+          image: sonarsource/sonar-scanner-cli:4.6
+          caches:
+            - sonar
+          script:
+            - sonar-scanner -Dsonar.projectKey=${BITBUCKET_REPO_SLUG} -Dsonar.branch.name=${BITBUCKET_BRANCH}
+      - parallel:
+        - step:
+            name: Build crypto-krakend stage
+            deployment: build-crypto-krakend-stage
+            image: python:3.9
+            caches:
+              - pip
+              - docker
+            script:
+              # build stage image and notify to slack
+              - if make build-app ENV_NAME=stage ECR_NAME=crypto-krakend DOCKERFILE_NAME=Dockerfile; then
+                make slack-notification MESSAGE="Image for crypto-krakend was SUCCESSFULLY built.";
+                else
+                make slack-notification MESSAGE="Build of image for crypto-krakend was FAILED.";
+                exit 1;
+                fi
+            artifacts:
+              - tmp-stage-crypto-krakend-image.docker
+      - parallel:
+        - step:
+            name: Auto-deploy crypto-krakend to stage
+            deployment: deploy-crypto-krakend-stage
+            image: python:3.9
+            caches:
+              - pip
+            script:
+              - pip install awscli --upgrade
+              # deploy app to stage and notify to slack
+              - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+              - if make push-app ENV_NAME=stage ECR_NAME=crypto-krakend && make deploy-app ENV_NAME=stage; then
+               make slack-notification MESSAGE="deploy to crypto-krakend was SUCCESSFULL.";
+               else
+               make slack-notification MESSAGE="deploy to crypto-krakend was FAILED.";
+               exit 1;
+               fi
+    master:
+      - step:
+          name: SonarQube analysis
+          image: sonarsource/sonar-scanner-cli:4.6
+          caches:
+            - sonar
+          script:
+            - sonar-scanner -Dsonar.projectKey=${BITBUCKET_REPO_SLUG} -Dsonar.branch.name=${BITBUCKET_BRANCH}
+      - parallel:
+        - step:
+            name: Build crypto-krakend prod
+            deployment: build-crypto-krakend-prod
+            image: python:3.9
+            caches:
+              - pip
+              - docker
+            script:
+              # build prod image and notify to slack
+              - if make build-app ENV_NAME=prod ECR_NAME=crypto-krakend DOCKERFILE_NAME=Dockerfile; then
+                make slack-notification MESSAGE="Image for crypto-krakend was SUCCESSFULLY built.";
+                else
+                make slack-notification MESSAGE="Build of image for crypto-krakend was FAILED.";
+                exit 1;
+                fi
+            artifacts:
+              - tmp-prod-crypto-krakend-image.docker
+      - parallel:
+        - step:
+            name: Auto-deploy crypto-krakend to prod
+            deployment: deploy-crypto-krakend-prod
+            image: python:3.9
+            caches:
+              - pip
+            script:
+              - pip install awscli --upgrade
+              # deploy app to prod and notify to slack
+              - eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION} --no-include-email)
+              - if make push-app ENV_NAME=prod ECR_NAME=crypto-krakend && make deploy-app ENV_NAME=prod; then
+                make slack-notification MESSAGE="deploy to crypto-krakend was SUCCESSFULL.";
+                else
+                make slack-notification MESSAGE="deploy to crypto-krakend was FAILED.";
+                exit 1;
+                fi
+definitions:
+  caches:
+    sonar: /opt/sonar-scanner/.sonar
