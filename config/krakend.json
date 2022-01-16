@@ -1,0 +1,45 @@
+{
+    "version": 2,
+    "plugin": {
+        "pattern":".so",
+        "folder": "plugins/"
+    },
+    "timeout": "15000ms",
+    "cache_ttl": "30s",
+    "port":"8080",
+    "endpoints": [
+        {{ range $idx, $endpoint := .endpoints.endpoints_group }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":"{{ $endpoint.host }}",
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+    ],
+    "extra_config": {
+        "github_com/devopsfaith/krakend/transport/http/server/handler": {
+            "name": [ "krakend-basic-auth" ],
+            "krakend-basic-auth": {
+                "htpasswd_path": "{{ .service.path_to_htpasswd }}",
+                "endpoints": [
+                    {{ range $idx, $endpoint := .endpoints.endpoints_group }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ]
+            }  
+       }
+    }
+}
