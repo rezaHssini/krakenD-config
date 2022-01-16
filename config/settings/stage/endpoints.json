@@ -1,0 +1,243 @@
+{
+    "endpoints_group": [
+      {
+        "endpoint": "/trx/addresses/validate/{address}",
+        "backend": "/trx/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://tron-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/eth/addresses/validate/{address}",
+        "backend": "/eth/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://eth-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/btc/addresses/validate/{address}",
+        "backend": "/btc/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://btc-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/xrp/addresses/validate/{address}",
+        "backend": "/xrp/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://xrp-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/ltc/addresses/validate/{address}",
+        "backend": "/ltc/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://ltc-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/dash/addresses/validate/{address}",
+        "backend": "/dash/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://dash-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/dot/addresses/validate/{address}",
+        "backend": "/dot/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://polkadot-transactions.stage-local:8080"]
+      },
+  
+      {
+        "endpoint": "/trx/block/stats",
+        "backend": "/trx/block/stats",
+        "method": "GET",
+        "host": ["http://tron-transactions.stage-local:8080"]
+      },
+      {
+          "endpoint": "/eth/block/stats",
+          "backend": "/eth/block/stats",
+          "method": "GET",
+          "host": ["http://eth-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/xrp/block/stats",
+          "backend": "/xrp/block/stats",
+          "method": "GET",
+          "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/btc/block/stats",
+          "backend": "/btc/block/stats",
+          "method": "GET",
+          "host": ["http://btc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/ltc/block/stats",
+          "backend": "/ltc/block/stats",
+          "method": "GET",
+          "host": ["http://ltc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/dash/block/stats",
+          "backend": "/dash/block/stats",
+          "method": "GET",
+          "host": ["http://dash-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/dot/block/stats",
+          "backend": "/dot/block/stats",
+          "method": "GET",
+          "host": ["http://polkadot-transactions.stage-local:8080"]
+        },
+  
+        {
+          "endpoint": "/network-fee/trx/assets/{token}",
+          "backend": "/trx/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://tron-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/eth/assets/{token}",
+          "backend": "/eth/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://eth-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/xrp/assets/{token}",
+          "backend": "/xrp/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/btc/assets/{token}",
+          "backend": "/btc/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://btc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/ltc/assets/{token}",
+          "backend": "/ltc/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://ltc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/dash/assets/{token}",
+          "backend": "/dash/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://dash-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/dot/assets/{token}",
+          "backend": "/dot/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://polkadot-transactions.stage-local:8080"]
+        },
+  
+        {
+          "endpoint": "/trx/tokens",
+          "backend": "/trx/tokens",
+          "method": "GET",
+          "host": ["http://tron-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/eth/tokens",
+          "backend": "/eth/tokens",
+          "method": "GET",
+          "host": ["http://eth-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/xrp/tokens",
+          "backend": "/xrp/tokens",
+          "method": "GET",
+          "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/btc/tokens",
+          "backend": "/btc/tokens",
+          "method": "GET",
+          "host": ["http://btc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/ltc/tokens",
+          "backend": "/ltc/tokens",
+          "method": "GET",
+          "host": ["http://ltc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/dash/tokens",
+          "backend": "/dash/tokens",
+          "method": "GET",
+          "host": ["http://dash-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/dot/tokens",
+          "backend": "/dot/tokens",
+          "method": "GET",
+          "host": ["http://polkadot-transactions.stage-local:8080"]
+        },
+  
+        {
+          "endpoint": "/trx/withdraw",
+          "backend": "/trx/withdraw",
+          "method": "POST",
+          "host": ["http://tron-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/eth/withdraw",
+          "backend": "/eth/withdraw",
+          "method": "POST",
+          "host": ["http://eth-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/xrp/withdraw",
+          "backend": "/xrp/withdraw",
+          "method": "POST",
+          "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/btc/withdraw",
+          "backend": "/btc/withdraw",
+          "method": "POST",
+          "host": ["http://btc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/ltc/withdraw",
+          "backend": "/ltc/withdraw",
+          "method": "POST",
+          "host": ["http://ltc-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/dash/withdraw",
+          "backend": "/dash/withdraw",
+          "method": "POST",
+          "host": ["http://dash-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/dot/withdraw",
+          "backend": "/dot/withdraw",
+          "method": "POST",
+          "host": ["http://polkadot-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/spot-wallet/addresses",
+          "backend": "/spot-wallet/addresses",
+          "method": "POST",
+          "host": ["spot-wallet.stage-local:8080"]
+        },
+        {
+          "endpoint": "/spot-wallet/addresses/{coin_or_user}/{address}",
+          "backend": "/spot-wallet/addresses/{coin_or_user}/{address}",
+          "method": "GET",
+          "host": ["spot-wallet.stage-local:8080"]
+        },
+        {
+          "endpoint": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
+          "backend": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
+          "method": "GET",
+          "host": ["spot-wallet.stage-local:8080"]
+        },
+        {
+          "endpoint": "/spot-wallet/addresses/{coin_or_user}",
+          "backend": "/spot-wallet/addresses/{coin_or_user}",
+          "method": "GET",
+          "host": ["spot-wallet.stage-local:8080"]
+        }
+    ]
+  }
+  
