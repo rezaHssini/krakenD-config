@@ -25,10 +25,10 @@
         "host": ["http://xrp-transactions.stage-local:8080"]
       },
       {
-        "endpoint": "/segwit/addresses/validate/{address}",
-        "backend": "/segwit/addresses/validate/{address}",
+        "endpoint": "/segwit-btc/addresses/validate/{address}",
+        "backend": "/segwit-btc/addresses/validate/{address}",
         "method": "GET",
-        "host": ["http://segwit-transactions.stage-local:8080"]
+        "host": ["http://segwit-transactions.dev-local:8080"]
       },
       {
         "endpoint": "/ltc/addresses/validate/{address}",
@@ -68,10 +68,10 @@
           "host": ["http://xrp-transactions.stage-local:8080"]
         },
         {
-          "endpoint": "/segwit/block/stats",
-          "backend": "/segwit/block/stats",
+          "endpoint": "/segwit-btc/block/stats",
+          "backend": "/segwit-btc/block/stats",
           "method": "GET",
-          "host": ["http://segwit-transactions.stage-local:8080"]
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/btc/block/stats",
@@ -117,10 +117,10 @@
           "host": ["http://xrp-transactions.stage-local:8080"]
         },
         {
-          "endpoint": "/network-fee/segwit/assets/{token}",
-          "backend": "/segwit/network-fee/{token}",
+          "endpoint": "/network-fee/segwit-btc/assets/{token}",
+          "backend": "/segwit-btc/network-fee/{token}",
           "method": "GET",
-          "host": ["http://segwit-transactions.stage-local:8080"]
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/network-fee/btc/assets/{token}",
@@ -166,10 +166,10 @@
           "host": ["http://xrp-transactions.stage-local:8080"]
         },
         {
-          "endpoint": "/segwit/tokens",
-          "backend": "/segwit/tokens",
+          "endpoint": "/segwit-btc/tokens",
+          "backend": "/segwit-btc/tokens",
           "method": "GET",
-          "host": ["http://segwit-transactions.stage-local:8080"]
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/btc/tokens",
@@ -215,10 +215,10 @@
           "host": ["http://xrp-transactions.stage-local:8080"]
         },
         {
-          "endpoint": "/segwit/withdraw",
-          "backend": "/segwit/withdraw",
+          "endpoint": "/segwit-btc/withdraw",
+          "backend": "/segwit-btc/withdraw",
           "method": "POST",
-          "host": ["http://segwit-transactions.stage-local:8080"]
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/btc/withdraw",
