@@ -48,6 +48,12 @@
       "method": "GET",
       "host": ["http://polkadot-transactions.dev-local:8080"]
     },
+    {
+      "endpoint": "/bch/addresses/validate/{address}",
+      "backend": "/bch/addresses/validate/{address}",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
 
     {
       "endpoint": "/trx/block/stats",
@@ -96,6 +102,12 @@
       "backend": "/dot/block/stats",
       "method": "GET",
       "host": ["http://polkadot-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/bch/block/stats",
+      "backend": "/bch/block/stats",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
     },
 
     {
@@ -146,6 +158,12 @@
       "method": "GET",
       "host": ["http://polkadot-transactions.dev-local:8080"]
     },
+    {
+      "endpoint": "/network-fee/bch/assets/{token}",
+      "backend": "/bch/network-fee/{token}",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
 
     {
       "endpoint": "/trx/tokens",
@@ -195,6 +213,12 @@
       "method": "GET",
       "host": ["http://polkadot-transactions.dev-local:8080"]
     },
+    {
+      "endpoint": "/bch/tokens",
+      "backend": "/bch/tokens",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
 
     {
       "endpoint": "/trx/withdraw",
@@ -238,6 +262,13 @@
       "method": "POST",
       "host": ["http://dash-transactions.dev-local:8080"]
     },
+    {
+      "endpoint": "/bch/withdraw",
+      "backend": "/bch/withdraw",
+      "method": "POST",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
+
     {
       "endpoint": "/dot/withdraw",
       "backend": "/dot/withdraw",
