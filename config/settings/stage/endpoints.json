@@ -25,6 +25,12 @@
         "host": ["http://xrp-transactions.stage-local:8080"]
       },
       {
+        "endpoint": "/segwit-btc/addresses/validate/{address}",
+        "backend": "/segwit-btc/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://segwit-transactions.dev-local:8080"]
+      },
+      {
         "endpoint": "/ltc/addresses/validate/{address}",
         "backend": "/ltc/addresses/validate/{address}",
         "method": "GET",
@@ -42,7 +48,13 @@
         "method": "GET",
         "host": ["http://polkadot-transactions.stage-local:8080"]
       },
-  
+      {
+        "endpoint": "/bch/addresses/validate/{address}",
+        "backend": "/bch/addresses/validate/{address}",
+        "method": "GET",
+        "host": ["http://bch-transactions.stage-local:8080"]
+      },
+
       {
         "endpoint": "/trx/block/stats",
         "backend": "/trx/block/stats",
@@ -60,6 +72,12 @@
           "backend": "/xrp/block/stats",
           "method": "GET",
           "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/segwit-btc/block/stats",
+          "backend": "/segwit-btc/block/stats",
+          "method": "GET",
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/btc/block/stats",
@@ -85,6 +103,12 @@
           "method": "GET",
           "host": ["http://polkadot-transactions.stage-local:8080"]
         },
+        {
+          "endpoint": "/bch/block/stats",
+          "backend": "/bch/block/stats",
+          "method": "GET",
+          "host": ["http://bch-transactions.stage-local:8080"]
+        },
   
         {
           "endpoint": "/network-fee/trx/assets/{token}",
@@ -103,6 +127,12 @@
           "backend": "/xrp/network-fee/{token}",
           "method": "GET",
           "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/network-fee/segwit-btc/assets/{token}",
+          "backend": "/segwit-btc/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/network-fee/btc/assets/{token}",
@@ -128,7 +158,13 @@
           "method": "GET",
           "host": ["http://polkadot-transactions.stage-local:8080"]
         },
-  
+        {
+          "endpoint": "/network-fee/bch/assets/{token}",
+          "backend": "/bch/network-fee/{token}",
+          "method": "GET",
+          "host": ["http://bch-transactions.stage-local:8080"]
+        },
+
         {
           "endpoint": "/trx/tokens",
           "backend": "/trx/tokens",
@@ -146,6 +182,12 @@
           "backend": "/xrp/tokens",
           "method": "GET",
           "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/segwit-btc/tokens",
+          "backend": "/segwit-btc/tokens",
+          "method": "GET",
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/btc/tokens",
@@ -171,7 +213,13 @@
           "method": "GET",
           "host": ["http://polkadot-transactions.stage-local:8080"]
         },
-  
+        {
+          "endpoint": "/bch/tokens",
+          "backend": "/bch/tokens",
+          "method": "GET",
+          "host": ["http://bch-transactions.stage-local:8080"]
+        },
+
         {
           "endpoint": "/trx/withdraw",
           "backend": "/trx/withdraw",
@@ -189,6 +237,12 @@
           "backend": "/xrp/withdraw",
           "method": "POST",
           "host": ["http://xrp-transactions.stage-local:8080"]
+        },
+        {
+          "endpoint": "/segwit-btc/withdraw",
+          "backend": "/segwit-btc/withdraw",
+          "method": "POST",
+          "host": ["http://segwit-transactions.dev-local:8080"]
         },
         {
           "endpoint": "/btc/withdraw",
@@ -214,6 +268,13 @@
           "method": "POST",
           "host": ["http://polkadot-transactions.stage-local:8080"]
         },
+        {
+          "endpoint": "/bch/withdraw",
+          "backend": "/bch/withdraw",
+          "method": "POST",
+          "host": ["http://bch-transactions.stage-local:8080"]
+        },
+
         {
           "endpoint": "/spot-wallet/addresses",
           "backend": "/spot-wallet/addresses",
