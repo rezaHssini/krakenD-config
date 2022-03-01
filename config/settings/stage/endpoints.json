@@ -298,7 +298,1062 @@
           "backend": "/spot-wallet/addresses/{coin_or_user}",
           "method": "GET",
           "host": ["spot-wallet.stage-local:8080"]
-        }
+        },
+        
+    {
+      "endpoint": "/trx/addresses/check/{address}",
+      "backend": "/trx/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/block/{id}",
+      "backend": "/trx/block/{id}",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/block/actions/resync",
+      "backend": "/trx/block/actions/resync",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/transaction/{hash_block}",
+      "backend": "/trx/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet-limits/alert",
+      "backend": "/trx/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet-limits/alert",
+      "backend": "/trx/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet-limits/block",
+      "backend": "/trx/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet-limits/block",
+      "backend": "/trx/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet-limits/alert",
+      "backend": "/trx/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet-limits/alert",
+      "backend": "/trx/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet-limits/block",
+      "backend": "/trx/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet-limits/block",
+      "backend": "/trx/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/withdraw-blacklist",
+      "backend": "/trx/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/withdraw-blacklist",
+      "backend": "/trx/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/withdraw-blacklist/{address}",
+      "backend": "/trx/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet/current/resources",
+      "backend": "/trx/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet/resources/{address}",
+      "backend": "/trx/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/eth/addresses/check/{address}",
+      "backend": "/eth/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/block/{id}",
+      "backend": "/eth/block/{id}",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/block/actions/resync",
+      "backend": "/eth/block/actions/resync",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/transaction/{hash_block}",
+      "backend": "/eth/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet-limits/alert",
+      "backend": "/eth/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet-limits/alert",
+      "backend": "/eth/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet-limits/block",
+      "backend": "/eth/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet-limits/block",
+      "backend": "/eth/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/tech-wallet-limits/alert",
+      "backend": "/eth/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/tech-wallet-limits/alert",
+      "backend": "/eth/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/tech-wallet-limits/block",
+      "backend": "/eth/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/tech-wallet-limits/block",
+      "backend": "/eth/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/withdraw-blacklist",
+      "backend": "/eth/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/withdraw-blacklist",
+      "backend": "/eth/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/withdraw-blacklist/{address}",
+      "backend": "/eth/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet/current/resources",
+      "backend": "/eth/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet/resources/{address}",
+      "backend": "/eth/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/xrp/addresses/check/{address}",
+      "backend": "/xrp/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/block/{id}",
+      "backend": "/xrp/block/{id}",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/block/actions/resync",
+      "backend": "/xrp/block/actions/resync",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/transaction/{hash_block}",
+      "backend": "/xrp/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet-limits/alert",
+      "backend": "/xrp/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet-limits/alert",
+      "backend": "/xrp/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet-limits/block",
+      "backend": "/xrp/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet-limits/block",
+      "backend": "/xrp/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/tech-wallet-limits/alert",
+      "backend": "/xrp/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/tech-wallet-limits/alert",
+      "backend": "/xrp/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/tech-wallet-limits/block",
+      "backend": "/xrp/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/tech-wallet-limits/block",
+      "backend": "/xrp/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/withdraw-blacklist",
+      "backend": "/xrp/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/withdraw-blacklist",
+      "backend": "/xrp/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/withdraw-blacklist/{address}",
+      "backend": "/xrp/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet/current/resources",
+      "backend": "/xrp/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet/resources/{address}",
+      "backend": "/xrp/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/segwit-btc/addresses/check/{address}",
+      "backend": "/segwit-btc/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/block/{id}",
+      "backend": "/segwit-btc/block/{id}",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/block/actions/resync",
+      "backend": "/segwit-btc/block/actions/resync",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/transaction/{hash_block}",
+      "backend": "/segwit-btc/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet-limits/alert",
+      "backend": "/segwit-btc/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet-limits/alert",
+      "backend": "/segwit-btc/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet-limits/block",
+      "backend": "/segwit-btc/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet-limits/block",
+      "backend": "/segwit-btc/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/tech-wallet-limits/alert",
+      "backend": "/segwit-btc/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/tech-wallet-limits/alert",
+      "backend": "/segwit-btc/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/tech-wallet-limits/block",
+      "backend": "/segwit-btc/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/tech-wallet-limits/block",
+      "backend": "/segwit-btc/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/withdraw-blacklist",
+      "backend": "/segwit-btc/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/withdraw-blacklist",
+      "backend": "/segwit-btc/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/withdraw-blacklist/{address}",
+      "backend": "/segwit-btc/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet/current/resources",
+      "backend": "/segwit-btc/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet/resources/{address}",
+      "backend": "/segwit-btc/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/nomination",
+      "backend": "/segwit-btc/nomination",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+        "endpoint": "/segwit-btc/nomination",
+        "backend": "/segwit-btc/nomination",
+        "method": "GET",
+        "host": ["http://segwit-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/segwit-btc/nomination",
+        "backend": "/segwit-btc/nomination",
+        "method": "PUT",
+        "host": ["http://segwit-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/segwit-btc/nomination",
+        "backend": "/segwit-btc/nomination",
+        "method": "DELETE",
+        "host": ["http://segwit-transactions.stage-local:8080"]
+      },
+   
+   
+
+
+
+    {
+      "endpoint": "/btc/addresses/check/{address}",
+      "backend": "/btc/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/block/{id}",
+      "backend": "/btc/block/{id}",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/block/actions/resync",
+      "backend": "/btc/block/actions/resync",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/transaction/{hash_block}",
+      "backend": "/btc/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/alert",
+      "backend": "/btc/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/alert",
+      "backend": "/btc/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/block",
+      "backend": "/btc/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/block",
+      "backend": "/btc/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/tech-wallet-limits/alert",
+      "backend": "/btc/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/tech-wallet-limits/alert",
+      "backend": "/btc/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/tech-wallet-limits/block",
+      "backend": "/btc/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/tech-wallet-limits/block",
+      "backend": "/btc/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist",
+      "backend": "/btc/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist",
+      "backend": "/btc/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist/{address}",
+      "backend": "/btc/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet/current/resources",
+      "backend": "/btc/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet/resources/{address}",
+      "backend": "/btc/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+        "endpoint": "/btc/nomination",
+        "backend": "/btc/nomination",
+        "method": "GET",
+        "host": ["http://btc-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/btc/nomination",
+        "backend": "/btc/nomination",
+        "method": "PUT",
+        "host": ["http://btc-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/btc/nomination",
+        "backend": "/btc/nomination",
+        "method": "DELETE",
+        "host": ["http://btc-transactions.stage-local:8080"]
+      },
+
+    {
+      "endpoint": "/ltc/addresses/check/{address}",
+      "backend": "/ltc/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/block/{id}",
+      "backend": "/ltc/block/{id}",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/block/actions/resync",
+      "backend": "/ltc/block/actions/resync",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/transaction/{hash_block}",
+      "backend": "/ltc/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/alert",
+      "backend": "/ltc/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/alert",
+      "backend": "/ltc/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/block",
+      "backend": "/ltc/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/block",
+      "backend": "/ltc/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/tech-wallet-limits/alert",
+      "backend": "/ltc/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/tech-wallet-limits/alert",
+      "backend": "/ltc/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/tech-wallet-limits/block",
+      "backend": "/ltc/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/tech-wallet-limits/block",
+      "backend": "/ltc/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist",
+      "backend": "/ltc/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist",
+      "backend": "/ltc/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist/{address}",
+      "backend": "/ltc/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/current/resources",
+      "backend": "/ltc/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/resources/{address}",
+      "backend": "/ltc/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    
+    {
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+        "endpoint": "/ltc/nomination",
+        "backend": "/ltc/nomination",
+        "method": "GET",
+        "host": ["http://ltc-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/ltc/nomination",
+        "backend": "/ltc/nomination",
+        "method": "PUT",
+        "host": ["http://ltc-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/ltc/nomination",
+        "backend": "/ltc/nomination",
+        "method": "DELETE",
+        "host": ["http://ltc-transactions.stage-local:8080"]
+      },
+
+    {
+      "endpoint": "/dot/addresses/check/{address}",
+      "backend": "/dot/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/block/{id}",
+      "backend": "/dot/block/{id}",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/block/actions/resync",
+      "backend": "/dot/block/actions/resync",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/transaction/{hash_block}",
+      "backend": "/dot/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/alert",
+      "backend": "/dot/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/alert",
+      "backend": "/dot/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/block",
+      "backend": "/dot/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/block",
+      "backend": "/dot/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/tech-wallet-limits/alert",
+      "backend": "/dot/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/tech-wallet-limits/alert",
+      "backend": "/dot/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/tech-wallet-limits/block",
+      "backend": "/dot/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/tech-wallet-limits/block",
+      "backend": "/dot/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist",
+      "backend": "/dot/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist",
+      "backend": "/dot/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist/{address}",
+      "backend": "/dot/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet/current/resources",
+      "backend": "/dot/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet/resources/{address}",
+      "backend": "/dot/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/dash/addresses/check/{address}",
+      "backend": "/dash/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/block/{id}",
+      "backend": "/dash/block/{id}",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/block/actions/resync",
+      "backend": "/dash/block/actions/resync",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/transaction/{hash_block}",
+      "backend": "/dash/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet-limits/alert",
+      "backend": "/dash/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet-limits/alert",
+      "backend": "/dash/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet-limits/block",
+      "backend": "/dash/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet-limits/block",
+      "backend": "/dash/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/tech-wallet-limits/alert",
+      "backend": "/dash/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/tech-wallet-limits/alert",
+      "backend": "/dash/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/tech-wallet-limits/block",
+      "backend": "/dash/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/tech-wallet-limits/block",
+      "backend": "/dash/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/withdraw-blacklist",
+      "backend": "/dash/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/withdraw-blacklist",
+      "backend": "/dash/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/withdraw-blacklist/{address}",
+      "backend": "/dash/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet/current/resources",
+      "backend": "/dash/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet/resources/{address}",
+      "backend": "/dash/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/nomination",
+      "backend": "/dash/nomination",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+        "endpoint": "/dash/nomination",
+        "backend": "/dash/nomination",
+        "method": "GET",
+        "host": ["http://dash-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/dash/nomination",
+        "backend": "/dash/nomination",
+        "method": "PUT",
+        "host": ["http://dash-transactions.stage-local:8080"]
+      },
+      {
+        "endpoint": "/dash/nomination",
+        "backend": "/dash/nomination",
+        "method": "DELETE",
+        "host": ["http://dash-transactions.stage-local:8080"]
+      },
+
+    {
+      "endpoint": "/bch/addresses/check/{address}",
+      "backend": "/bch/addresses/check/{address}",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/block/{id}",
+      "backend": "/bch/block/{id}",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/block/actions/resync",
+      "backend": "/bch/block/actions/resync",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/transaction/{hash_block}",
+      "backend": "/bch/transaction/{hash_block}",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet-limits/alert",
+      "backend": "/bch/hot-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet-limits/alert",
+      "backend": "/bch/hot-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet-limits/block",
+      "backend": "/bch/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet-limits/block",
+      "backend": "/bch/hot-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/tech-wallet-limits/alert",
+      "backend": "/bch/tech-wallet-limits/alert",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/tech-wallet-limits/alert",
+      "backend": "/bch/tech-wallet-limits/alert",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/tech-wallet-limits/block",
+      "backend": "/bch/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/tech-wallet-limits/block",
+      "backend": "/bch/tech-wallet-limits/block",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/withdraw-blacklist",
+      "backend": "/bch/withdraw-blacklist",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/withdraw-blacklist",
+      "backend": "/bch/withdraw-blacklist",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/withdraw-blacklist/{address}",
+      "backend": "/bch/withdraw-blacklist/{address}",
+      "method": "DELETE",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet/current/resources",
+      "backend": "/bch/hot-wallet/current/resources",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet/resources/{address}",
+      "backend": "/bch/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/nomination",
+      "backend": "/bch/nomination",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/nomination",
+      "backend": "/bch/nomination",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/nomination",
+      "backend": "/bch/nomination",
+      "method": "PUT",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/nomination",
+      "backend": "/bch/nomination",
+      "method": "DELETE",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    }
+  ]
+}
+
     ]
   }
   
