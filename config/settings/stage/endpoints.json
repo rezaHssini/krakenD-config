@@ -646,30 +646,6 @@
       "host": ["http://segwit-transactions.stage-local:8080"]
     },
     {
-      "endpoint": "/segwit-btc/tech-wallet-limits/alert",
-      "backend": "/segwit-btc/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://segwit-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/tech-wallet-limits/alert",
-      "backend": "/segwit-btc/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://segwit-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/tech-wallet-limits/block",
-      "backend": "/segwit-btc/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://segwit-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/tech-wallet-limits/block",
-      "backend": "/segwit-btc/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://segwit-transactions.stage-local:8080"]
-    },
-    {
       "endpoint": "/segwit-btc/withdraw-blacklist",
       "backend": "/segwit-btc/withdraw-blacklist",
       "method": "POST",
@@ -773,30 +749,6 @@
       "host": ["http://btc-transactions.stage-local:8080"]
     },
     {
-      "endpoint": "/btc/tech-wallet-limits/alert",
-      "backend": "/btc/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://btc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/btc/tech-wallet-limits/alert",
-      "backend": "/btc/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://btc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/btc/tech-wallet-limits/block",
-      "backend": "/btc/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://btc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/btc/tech-wallet-limits/block",
-      "backend": "/btc/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://btc-transactions.stage-local:8080"]
-    },
-    {
       "endpoint": "/btc/withdraw-blacklist",
       "backend": "/btc/withdraw-blacklist",
       "method": "POST",
@@ -896,30 +848,6 @@
     {
       "endpoint": "/ltc/hot-wallet-limits/block",
       "backend": "/ltc/hot-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://ltc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/ltc/tech-wallet-limits/alert",
-      "backend": "/ltc/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://ltc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/ltc/tech-wallet-limits/alert",
-      "backend": "/ltc/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://ltc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/ltc/tech-wallet-limits/block",
-      "backend": "/ltc/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://ltc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/ltc/tech-wallet-limits/block",
-      "backend": "/ltc/tech-wallet-limits/block",
       "method": "POST",
       "host": ["http://ltc-transactions.stage-local:8080"]
     },
@@ -1107,30 +1035,6 @@
       "host": ["http://dash-transactions.stage-local:8080"]
     },
     {
-      "endpoint": "/dash/tech-wallet-limits/alert",
-      "backend": "/dash/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://dash-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/dash/tech-wallet-limits/alert",
-      "backend": "/dash/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://dash-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/dash/tech-wallet-limits/block",
-      "backend": "/dash/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://dash-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/dash/tech-wallet-limits/block",
-      "backend": "/dash/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://dash-transactions.stage-local:8080"]
-    },
-    {
       "endpoint": "/dash/withdraw-blacklist",
       "backend": "/dash/withdraw-blacklist",
       "method": "POST",
@@ -1230,30 +1134,6 @@
     {
       "endpoint": "/bch/hot-wallet-limits/block",
       "backend": "/bch/hot-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://bch-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/bch/tech-wallet-limits/alert",
-      "backend": "/bch/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://bch-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/bch/tech-wallet-limits/alert",
-      "backend": "/bch/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://bch-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/bch/tech-wallet-limits/block",
-      "backend": "/bch/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://bch-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/bch/tech-wallet-limits/block",
-      "backend": "/bch/tech-wallet-limits/block",
       "method": "POST",
       "host": ["http://bch-transactions.stage-local:8080"]
     },
