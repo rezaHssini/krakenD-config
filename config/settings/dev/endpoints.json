@@ -402,6 +402,12 @@
       "method": "GET",
       "host": ["http://tron-transactions.dev-local:8080"]
     },
+    {
+      "endpoint": "/trx/tech-wallet/resources/{address}",
+      "backend": "/trx/tech-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://tron-transactions.dev-local:8080"]
+    },
 
     {
       "endpoint": "/eth/addresses/check/{address}",
@@ -505,6 +511,12 @@
       "method": "GET",
       "host": ["http://eth-transactions.dev-local:8080"]
     },
+    {
+      "endpoint": "/eth/tech-wallet/resources/{address}",
+      "backend": "/eth/tech-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://eth-transactions.dev-local:8080"]
+    },
 
     {
       "endpoint": "/xrp/addresses/check/{address}",
@@ -551,30 +563,6 @@
     {
       "endpoint": "/xrp/hot-wallet-limits/block",
       "backend": "/xrp/hot-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://xrp-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/alert",
-      "backend": "/xrp/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://xrp-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/alert",
-      "backend": "/xrp/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://xrp-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/block",
-      "backend": "/xrp/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://xrp-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/block",
-      "backend": "/xrp/tech-wallet-limits/block",
       "method": "POST",
       "host": ["http://xrp-transactions.dev-local:8080"]
     },
@@ -1036,30 +1024,6 @@
     {
       "endpoint": "/dot/hot-wallet-limits/block",
       "backend": "/dot/hot-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/alert",
-      "backend": "/dot/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/alert",
-      "backend": "/dot/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://polkadot-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/block",
-      "backend": "/dot/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/block",
-      "backend": "/dot/tech-wallet-limits/block",
       "method": "POST",
       "host": ["http://polkadot-transactions.dev-local:8080"]
     },

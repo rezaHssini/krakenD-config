@@ -25,6 +25,12 @@
       "host": ["http://xrp-transactions.prod-local:8080"]
     },
     {
+      "endpoint": "/segwit-btc/addresses/validate/{address}",
+      "backend": "/segwit-btc/addresses/validate/{address}",
+      "method": "GET",
+      "host": ["http://segwit-transactions.prod-local:8080"]
+    },
+    {
       "endpoint": "/ltc/addresses/validate/{address}",
       "backend": "/ltc/addresses/validate/{address}",
       "method": "GET",
@@ -66,6 +72,12 @@
       "backend": "/xrp/block/stats",
       "method": "GET",
       "host": ["http://xrp-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/block/stats",
+      "backend": "/segwit-btc/block/stats",
+      "method": "GET",
+      "host": ["http://segwit-transactions.prod-local:8080"]
     },
     {
       "endpoint": "/btc/block/stats",
@@ -117,6 +129,12 @@
       "host": ["http://xrp-transactions.prod-local:8080"]
     },
     {
+      "endpoint": "/network-fee/segwit-btc/assets/{token}",
+      "backend": "/segwit-btc/network-fee/{token}",
+      "method": "GET",
+      "host": ["http://segwit-transactions.prod-local:8080"]
+    },
+    {
       "endpoint": "/network-fee/btc/assets/{token}",
       "backend": "/btc/network-fee/{token}",
       "method": "GET",
@@ -164,6 +182,12 @@
       "backend": "/xrp/tokens",
       "method": "GET",
       "host": ["http://xrp-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/tokens",
+      "backend": "/segwit-btc/tokens",
+      "method": "GET",
+      "host": ["http://segwit-transactions.prod-local:8080"]
     },
     {
       "endpoint": "/btc/tokens",
@@ -215,6 +239,12 @@
       "host": ["http://xrp-transactions.prod-local:8080"]
     },
     {
+      "endpoint": "/segwit-btc/withdraw",
+      "backend": "/segwit-btc/withdraw",
+      "method": "POST",
+      "host": ["http://segwit-transactions.prod-local:8080"]
+    },
+    {
       "endpoint": "/btc/withdraw",
       "backend": "/btc/withdraw",
       "method": "POST",
@@ -233,18 +263,18 @@
       "host": ["http://dash-transactions.prod-local:8080"]
     },
     {
-      "endpoint": "/dot/withdraw",
-      "backend": "/dot/withdraw",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.prod-local:8080"]
-    },
-    {
       "endpoint": "/bch/withdraw",
       "backend": "/bch/withdraw",
       "method": "POST",
       "host": ["http://bch-transactions.prod-local:8080"]
     },
 
+    {
+      "endpoint": "/dot/withdraw",
+      "backend": "/dot/withdraw",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.prod-local:8080"]
+    },
     {
       "endpoint": "/spot-wallet/addresses",
       "backend": "/spot-wallet/addresses",
@@ -269,37 +299,7 @@
       "method": "GET",
       "host": ["spot-wallet.prod-local:8080"]
     },
-    {
-      "endpoint": "/segwit-btc/addresses/validate/{address}",
-      "backend": "/segwit-btc/addresses/validate/{address}",
-      "method": "GET",
-      "host": ["http://segwit-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/block/stats",
-      "backend": "/segwit-btc/block/stats",
-      "method": "GET",
-      "host": ["http://segwit-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/network-fee/segwit-btc/assets/{token}",
-      "backend": "/segwit-btc/network-fee/{token}",
-      "method": "GET",
-      "host": ["http://segwit-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/tokens",
-      "backend": "/segwit-btc/tokens",
-      "method": "GET",
-      "host": ["http://segwit-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/withdraw",
-      "backend": "/segwit-btc/withdraw",
-      "method": "POST",
-      "host": ["http://segwit-transactions.prod-local:8080"]
-    },
-    
+
     {
       "endpoint": "/trx/addresses/check/{address}",
       "backend": "/trx/addresses/check/{address}",
@@ -399,6 +399,12 @@
     {
       "endpoint": "/trx/hot-wallet/resources/{address}",
       "backend": "/trx/hot-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://tron-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet/resources/{address}",
+      "backend": "/trx/tech-wallet/resources/{address}",
       "method": "GET",
       "host": ["http://tron-transactions.prod-local:8080"]
     },
@@ -505,6 +511,12 @@
       "method": "GET",
       "host": ["http://eth-transactions.prod-local:8080"]
     },
+    {
+      "endpoint": "/eth/tech-wallet/resources/{address}",
+      "backend": "/eth/tech-wallet/resources/{address}",
+      "method": "GET",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
 
     {
       "endpoint": "/xrp/addresses/check/{address}",
@@ -551,30 +563,6 @@
     {
       "endpoint": "/xrp/hot-wallet-limits/block",
       "backend": "/xrp/hot-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://xrp-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/alert",
-      "backend": "/xrp/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://xrp-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/alert",
-      "backend": "/xrp/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://xrp-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/block",
-      "backend": "/xrp/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://xrp-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/tech-wallet-limits/block",
-      "backend": "/xrp/tech-wallet-limits/block",
       "method": "POST",
       "host": ["http://xrp-transactions.prod-local:8080"]
     },
@@ -718,27 +706,23 @@
       "host": ["http://segwit-transactions.prod-local:8080"]
     },
     {
-        "endpoint": "/segwit-btc/nomination",
-        "backend": "/segwit-btc/nomination",
-        "method": "GET",
-        "host": ["http://segwit-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/segwit-btc/nomination",
-        "backend": "/segwit-btc/nomination",
-        "method": "PUT",
-        "host": ["http://segwit-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/segwit-btc/nomination",
-        "backend": "/segwit-btc/nomination",
-        "method": "DELETE",
-        "host": ["http://segwit-transactions.prod-local:8080"]
-      },
-   
-   
-
-
+      "endpoint": "/segwit-btc/nomination",
+      "backend": "/segwit-btc/nomination",
+      "method": "GET",
+      "host": ["http://segwit-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/nomination",
+      "backend": "/segwit-btc/nomination",
+      "method": "PUT",
+      "host": ["http://segwit-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/nomination",
+      "backend": "/segwit-btc/nomination",
+      "method": "DELETE",
+      "host": ["http://segwit-transactions.prod-local:8080"]
+    },
 
     {
       "endpoint": "/btc/addresses/check/{address}",
@@ -849,23 +833,23 @@
       "host": ["http://btc-transactions.prod-local:8080"]
     },
     {
-        "endpoint": "/btc/nomination",
-        "backend": "/btc/nomination",
-        "method": "GET",
-        "host": ["http://btc-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/btc/nomination",
-        "backend": "/btc/nomination",
-        "method": "PUT",
-        "host": ["http://btc-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/btc/nomination",
-        "backend": "/btc/nomination",
-        "method": "DELETE",
-        "host": ["http://btc-transactions.prod-local:8080"]
-      },
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "GET",
+      "host": ["http://btc-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "PUT",
+      "host": ["http://btc-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "DELETE",
+      "host": ["http://btc-transactions.prod-local:8080"]
+    },
 
     {
       "endpoint": "/ltc/addresses/check/{address}",
@@ -969,7 +953,7 @@
       "method": "GET",
       "host": ["http://ltc-transactions.prod-local:8080"]
     },
-    
+
     {
       "endpoint": "/ltc/nomination",
       "backend": "/ltc/nomination",
@@ -977,23 +961,23 @@
       "host": ["http://ltc-transactions.prod-local:8080"]
     },
     {
-        "endpoint": "/ltc/nomination",
-        "backend": "/ltc/nomination",
-        "method": "GET",
-        "host": ["http://ltc-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/ltc/nomination",
-        "backend": "/ltc/nomination",
-        "method": "PUT",
-        "host": ["http://ltc-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/ltc/nomination",
-        "backend": "/ltc/nomination",
-        "method": "DELETE",
-        "host": ["http://ltc-transactions.prod-local:8080"]
-      },
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "GET",
+      "host": ["http://ltc-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "PUT",
+      "host": ["http://ltc-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "DELETE",
+      "host": ["http://ltc-transactions.prod-local:8080"]
+    },
 
     {
       "endpoint": "/dot/addresses/check/{address}",
@@ -1040,30 +1024,6 @@
     {
       "endpoint": "/dot/hot-wallet-limits/block",
       "backend": "/dot/hot-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/alert",
-      "backend": "/dot/tech-wallet-limits/alert",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/alert",
-      "backend": "/dot/tech-wallet-limits/alert",
-      "method": "GET",
-      "host": ["http://polkadot-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/block",
-      "backend": "/dot/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.prod-local:8080"]
-    },
-    {
-      "endpoint": "/dot/tech-wallet-limits/block",
-      "backend": "/dot/tech-wallet-limits/block",
       "method": "POST",
       "host": ["http://polkadot-transactions.prod-local:8080"]
     },
@@ -1207,23 +1167,23 @@
       "host": ["http://dash-transactions.prod-local:8080"]
     },
     {
-        "endpoint": "/dash/nomination",
-        "backend": "/dash/nomination",
-        "method": "GET",
-        "host": ["http://dash-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/dash/nomination",
-        "backend": "/dash/nomination",
-        "method": "PUT",
-        "host": ["http://dash-transactions.prod-local:8080"]
-      },
-      {
-        "endpoint": "/dash/nomination",
-        "backend": "/dash/nomination",
-        "method": "DELETE",
-        "host": ["http://dash-transactions.prod-local:8080"]
-      },
+      "endpoint": "/dash/nomination",
+      "backend": "/dash/nomination",
+      "method": "GET",
+      "host": ["http://dash-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/dash/nomination",
+      "backend": "/dash/nomination",
+      "method": "PUT",
+      "host": ["http://dash-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/dash/nomination",
+      "backend": "/dash/nomination",
+      "method": "DELETE",
+      "host": ["http://dash-transactions.prod-local:8080"]
+    },
 
     {
       "endpoint": "/bch/addresses/check/{address}",
@@ -1351,8 +1311,5 @@
       "method": "DELETE",
       "host": ["http://bch-transactions.prod-local:8080"]
     }
-  ]
-}
-
   ]
 }
