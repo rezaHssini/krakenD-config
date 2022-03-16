@@ -28,11 +28,7 @@
       "endpoint": "/segwit-btc/addresses/validate/{address}",
       "backend": "/segwit-btc/addresses/validate/{address}",
       "method": "GET",
-<<<<<<< HEAD
-      "host": ["http://segwit-transactions.dev-local:8080"]
-=======
       "host": ["http://segwit-transactions.stage-local:8080"]
->>>>>>> dev
     },
     {
       "endpoint": "/ltc/addresses/validate/{address}",
@@ -81,11 +77,7 @@
       "endpoint": "/segwit-btc/block/stats",
       "backend": "/segwit-btc/block/stats",
       "method": "GET",
-<<<<<<< HEAD
-      "host": ["http://segwit-transactions.dev-local:8080"]
-=======
       "host": ["http://segwit-transactions.stage-local:8080"]
->>>>>>> dev
     },
     {
       "endpoint": "/btc/block/stats",
@@ -140,11 +132,7 @@
       "endpoint": "/network-fee/segwit-btc/assets/{token}",
       "backend": "/segwit-btc/network-fee/{token}",
       "method": "GET",
-<<<<<<< HEAD
-      "host": ["http://segwit-transactions.dev-local:8080"]
-=======
       "host": ["http://segwit-transactions.stage-local:8080"]
->>>>>>> dev
     },
     {
       "endpoint": "/network-fee/btc/assets/{token}",
@@ -199,11 +187,7 @@
       "endpoint": "/segwit-btc/tokens",
       "backend": "/segwit-btc/tokens",
       "method": "GET",
-<<<<<<< HEAD
-      "host": ["http://segwit-transactions.dev-local:8080"]
-=======
       "host": ["http://segwit-transactions.stage-local:8080"]
->>>>>>> dev
     },
     {
       "endpoint": "/btc/tokens",
@@ -258,64 +242,6 @@
       "endpoint": "/segwit-btc/withdraw",
       "backend": "/segwit-btc/withdraw",
       "method": "POST",
-<<<<<<< HEAD
-      "host": ["http://segwit-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/btc/withdraw",
-      "backend": "/btc/withdraw",
-      "method": "POST",
-      "host": ["http://btc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/ltc/withdraw",
-      "backend": "/ltc/withdraw",
-      "method": "POST",
-      "host": ["http://ltc-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/dash/withdraw",
-      "backend": "/dash/withdraw",
-      "method": "POST",
-      "host": ["http://dash-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/dot/withdraw",
-      "backend": "/dot/withdraw",
-      "method": "POST",
-      "host": ["http://polkadot-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/bch/withdraw",
-      "backend": "/bch/withdraw",
-      "method": "POST",
-      "host": ["http://bch-transactions.stage-local:8080"]
-    },
-
-    {
-      "endpoint": "/trx/withdraw",
-      "backend": "/trx/withdraw",
-      "method": "POST",
-      "host": ["http://tron-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/eth/withdraw",
-      "backend": "/eth/withdraw",
-      "method": "POST",
-      "host": ["http://eth-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/xrp/withdraw",
-      "backend": "/xrp/withdraw",
-      "method": "POST",
-      "host": ["http://xrp-transactions.stage-local:8080"]
-    },
-    {
-      "endpoint": "/segwit-btc/withdraw",
-      "backend": "/segwit-btc/withdraw",
-      "method": "POST",
-=======
->>>>>>> dev
       "host": ["http://segwit-transactions.stage-local:8080"]
     },
     {
