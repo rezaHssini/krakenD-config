@@ -1307,6 +1307,115 @@
       "backend": "/segwit-btc/report",
       "method": "GET",
       "host": ["http://segwit-transactions.dev-local:8080"]
+    },
+
+    {
+      "endpoint": "/segwit-btc/get-pending-transfer",
+      "backend": "/segwit-btc/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://segwit-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/get-transaction-info",
+      "backend": "/segwit-btc/get-transaction-info",
+      "method": "GET",
+      "host": ["http://segwit-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/btc/get-pending-transfer",
+      "backend": "/btc/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://btc-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/btc/get-transaction-info",
+      "backend": "/btc/get-transaction-info",
+      "method": "GET",
+      "host": ["http://btc-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/bch/get-pending-transfer",
+      "backend": "/bch/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/bch/get-transaction-info",
+      "backend": "/bch/get-transaction-info",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/get-pending-transfer",
+      "backend": "/ltc/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://ltc-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/get-transaction-info",
+      "backend": "/ltc/get-transaction-info",
+      "method": "GET",
+      "host": ["http://ltc-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/dash/get-pending-transfer",
+      "backend": "/dash/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://dash-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/dash/get-transaction-info",
+      "backend": "/dash/get-transaction-info",
+      "method": "GET",
+      "host": ["http://dash-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/get-pending-transfer",
+      "backend": "/xrp/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://xrp-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/get-transaction-info",
+      "backend": "/xrp/get-transaction-info",
+      "method": "GET",
+      "host": ["http://xrp-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/dot/get-pending-transfer",
+      "backend": "/dot/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/dot/get-transaction-info",
+      "backend": "/dot/get-transaction-info",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer",
+      "backend": "/eth/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://eth-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-transaction-info",
+      "backend": "/eth/get-transaction-info",
+      "method": "GET",
+      "host": ["http://eth-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/trx/get-pending-transfer",
+      "backend": "/trx/get-pending-transfer",
+      "method": "GET",
+      "host": ["http://tron-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/trx/get-transaction-info",
+      "backend": "/trx/get-transaction-info",
+      "method": "GET",
+      "host": ["http://tron-transactions.dev-local:8080"]
     }
   ]
 }
