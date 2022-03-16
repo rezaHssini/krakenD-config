@@ -298,8 +298,6 @@
       "backend": "/segwit-btc/withdraw",
       "method": "POST",
       "host": ["http://segwit-transactions.prod-local:8080"]
-<<<<<<< Updated upstream
-=======
     },
     {
       "endpoint": "/segwit-btc/hot-wallet-limits/alert",
@@ -981,7 +979,6 @@
       "backend": "/segwit-btc/report",
       "method": "GET",
       "host": ["http://segwit-transactions.prod-local:8080"]
->>>>>>> Stashed changes
     }
   ]
 }

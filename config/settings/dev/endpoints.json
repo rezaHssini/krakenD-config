@@ -298,8 +298,6 @@
       "backend": "/spot-wallet/addresses/{coin_or_user}",
       "method": "GET",
       "host": ["spot-wallet.dev-local:8080"]
-<<<<<<< Updated upstream
-=======
     },
 
     {
@@ -1309,7 +1307,6 @@
       "backend": "/segwit-btc/report",
       "method": "GET",
       "host": ["http://segwit-transactions.dev-local:8080"]
->>>>>>> Stashed changes
     }
   ]
 }
