@@ -1190,6 +1190,43 @@
       "backend": "/bch/nomination",
       "method": "DELETE",
       "host": ["http://bch-transactions.dev-local:8080"]
+    },
+
+    {
+      "endpoint": "/network-fee/eth",
+      "backend": "/eth/network-fee/raw/current",
+      "method": "GET",
+      "host": ["http://eth-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/network-fee/btc",
+      "backend": "/btc/network-fee/raw/current",
+      "method": "GET",
+      "host": ["http://btc-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/network-fee/bch",
+      "backend": "/bch/network-fee/raw/current",
+      "method": "GET",
+      "host": ["http://bch-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/network-fee/ltc",
+      "backend": "/ltc/network-fee/raw/current",
+      "method": "GET",
+      "host": ["http://ltc-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/network-fee/dash",
+      "backend": "/dash/network-fee/raw/current",
+      "method": "GET",
+      "host": ["http://dash-transactions.dev-local:8080"]
+    },
+    {
+      "endpoint": "/network-fee/segwit-btc",
+      "backend": "/btc/network-fee/raw/current",
+      "method": "GET",
+      "host": ["http://segwit-transactions.dev-local:8080"]
     }
   ]
 }
