@@ -361,12 +361,6 @@
       "host": ["http://tron-transactions.stage-local:8080"]
     },
     {
-      "endpoint": "/trx/tech-wallet-limits/block",
-      "backend": "/trx/tech-wallet-limits/block",
-      "method": "POST",
-      "host": ["http://tron-transactions.stage-local:8080"]
-    },
-    {
       "endpoint": "/trx/withdraw-blacklist",
       "backend": "/trx/withdraw-blacklist",
       "method": "POST",
