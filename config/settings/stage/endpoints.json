@@ -339,6 +339,12 @@
     {
       "endpoint": "/trx/hot-wallet-limits/block",
       "backend": "/trx/hot-wallet-limits/block",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet-limits/block",
+      "backend": "/trx/hot-wallet-limits/block",
       "method": "POST",
       "host": ["http://tron-transactions.stage-local:8080"]
     },
@@ -352,6 +358,12 @@
       "endpoint": "/trx/tech-wallet-limits/alert",
       "backend": "/trx/tech-wallet-limits/alert",
       "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet-limits/block",
+      "backend": "/trx/tech-wallet-limits/block",
+      "method": "POST",
       "host": ["http://tron-transactions.stage-local:8080"]
     },
     {
@@ -436,7 +448,7 @@
     {
       "endpoint": "/eth/hot-wallet-limits/block",
       "backend": "/eth/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://eth-transactions.stage-local:8080"]
     },
     {
