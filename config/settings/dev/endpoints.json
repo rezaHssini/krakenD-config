@@ -363,7 +363,7 @@
     {
       "endpoint": "/trx/tech-wallet-limits/block",
       "backend": "/trx/tech-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://tron-transactions.dev-local:8080"]
     },
     {
@@ -472,7 +472,7 @@
     {
       "endpoint": "/eth/tech-wallet-limits/block",
       "backend": "/eth/tech-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://eth-transactions.dev-local:8080"]
     },
     {
