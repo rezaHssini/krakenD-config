@@ -557,7 +557,7 @@
     {
       "endpoint": "/xrp/hot-wallet-limits/block",
       "backend": "/xrp/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://xrp-transactions.dev-local:8080"]
     },
     {
