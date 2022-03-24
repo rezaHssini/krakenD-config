@@ -339,7 +339,7 @@
     {
       "endpoint": "/trx/hot-wallet-limits/block",
       "backend": "/trx/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://tron-transactions.prod-local:8080"]
     },
     {
@@ -363,7 +363,7 @@
     {
       "endpoint": "/trx/tech-wallet-limits/block",
       "backend": "/trx/tech-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://tron-transactions.prod-local:8080"]
     },
     {
@@ -448,7 +448,7 @@
     {
       "endpoint": "/eth/hot-wallet-limits/block",
       "backend": "/eth/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://eth-transactions.prod-local:8080"]
     },
     {
@@ -472,7 +472,7 @@
     {
       "endpoint": "/eth/tech-wallet-limits/block",
       "backend": "/eth/tech-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://eth-transactions.prod-local:8080"]
     },
     {
@@ -557,7 +557,7 @@
     {
       "endpoint": "/xrp/hot-wallet-limits/block",
       "backend": "/xrp/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://xrp-transactions.prod-local:8080"]
     },
     {
@@ -636,7 +636,7 @@
     {
       "endpoint": "/segwit-btc/hot-wallet-limits/block",
       "backend": "/segwit-btc/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://segwit-transactions.prod-local:8080"]
     },
     {
@@ -739,7 +739,7 @@
     {
       "endpoint": "/btc/hot-wallet-limits/block",
       "backend": "/btc/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://btc-transactions.prod-local:8080"]
     },
     {
@@ -842,7 +842,7 @@
     {
       "endpoint": "/ltc/hot-wallet-limits/block",
       "backend": "/ltc/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://ltc-transactions.prod-local:8080"]
     },
     {
@@ -946,7 +946,7 @@
     {
       "endpoint": "/dot/hot-wallet-limits/block",
       "backend": "/dot/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://polkadot-transactions.prod-local:8080"]
     },
     {
@@ -1025,7 +1025,7 @@
     {
       "endpoint": "/dash/hot-wallet-limits/block",
       "backend": "/dash/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://dash-transactions.prod-local:8080"]
     },
     {
@@ -1128,7 +1128,7 @@
     {
       "endpoint": "/bch/hot-wallet-limits/block",
       "backend": "/bch/hot-wallet-limits/block",
-      "method": "POST",
+      "method": "GET",
       "host": ["http://bch-transactions.prod-local:8080"]
     },
     {
