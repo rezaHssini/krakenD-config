@@ -1500,18 +1500,6 @@
       "backend": "/eth/get-pending-transfer/tech-wallet/cancel",
       "method": "POST",
       "host": ["http://eth-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/eth/hot-wallet/current/lock",
-      "backend": "/eth/hot-wallet/current/lock",
-      "method": "GET",
-      "host": ["http://eth-transactions.dev-local:8080"]
-    },
-    {
-      "endpoint": "/eth/hot-wallet/current/unlock",
-      "backend": "/eth/hot-wallet/current/unlock",
-      "method": "GET",
-      "host": ["http://eth-transactions.dev-local:8080"]
     }
   ]
 }
