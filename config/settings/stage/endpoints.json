@@ -1453,8 +1453,20 @@
       "host": ["http://segwit-transactions.stage-local:8080"]
     },
     {
+      "endpoint": "/eth/hot-wallet/current/lock",
+      "backend": "/eth/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
       "endpoint": "/eth/hot-wallet/current/nonce",
       "backend": "/eth/hot-wallet/current/nonce",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet/current/unlock",
+      "backend": "/eth/hot-wallet/current/unlock",
       "method": "GET",
       "host": ["http://eth-transactions.stage-local:8080"]
     },
@@ -1465,8 +1477,20 @@
       "host": ["http://eth-transactions.stage-local:8080"]
     },
     {
+      "endpoint": "/eth/tech-wallet/current/lock",
+      "backend": "/eth/tech-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
       "endpoint": "/eth/get-pending-transfer/hot-wallet",
       "backend": "/eth/get-pending-transfer/hot-wallet",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/tech-wallet/current/unlock",
+      "backend": "/eth/tech-wallet/current/unlock",
       "method": "GET",
       "host": ["http://eth-transactions.stage-local:8080"]
     },
@@ -1477,10 +1501,289 @@
       "host": ["http://eth-transactions.stage-local:8080"]
     },
     {
+      "endpoint": "/trx/hot-wallet/current/lock",
+      "backend": "/trx/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/hot-wallet/current/unlock",
+      "backend": "/trx/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet/current/lock",
+      "backend": "/trx/tech-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/tech-wallet/current/unlock",
+      "backend": "/trx/tech-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet/current/lock",
+      "backend": "/xrp/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/hot-wallet/current/unlock",
+      "backend": "/xrp/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet/current/lock",
+      "backend": "/dot/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/hot-wallet/current/unlock",
+      "backend": "/dot/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet/current/lock",
+      "backend": "/btc/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/hot-wallet/current/unlock",
+      "backend": "/btc/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/current/lock",
+      "backend": "/ltc/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/current/unlock",
+      "backend": "/ltc/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet/current/lock",
+      "backend": "/bch/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/hot-wallet/current/unlock",
+      "backend": "/bch/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet/current/lock",
+      "backend": "/dash/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/hot-wallet/current/unlock",
+      "backend": "/dash/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet/current/lock",
+      "backend": "/segwit-btc/hot-wallet/current/lock",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/hot-wallet/current/unlock",
+      "backend": "/segwit-btc/hot-wallet/current/unlock",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/job-locker",
+      "backend": "/eth/job-locker",
+      "method": "GET",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/job-locker",
+      "backend": "/eth/job-locker",
+      "method": "POST",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
       "endpoint": "/eth/get-pending-transfer/hot-wallet/replace",
       "backend": "/eth/get-pending-transfer/hot-wallet/replace",
       "method": "POST",
       "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/eth/job-locker/{key}",
+      "backend": "/eth/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://eth-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/job-locker",
+      "backend": "/trx/job-locker",
+      "method": "GET",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/job-locker",
+      "backend": "/trx/job-locker",
+      "method": "POST",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/trx/job-locker/{key}",
+      "backend": "/trx/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://tron-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/xrp/job-locker",
+      "backend": "/xrp/job-locker",
+      "method": "GET",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/job-locker",
+      "backend": "/xrp/job-locker",
+      "method": "POST",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/xrp/job-locker/{key}",
+      "backend": "/xrp/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://xrp-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/dot/job-locker",
+      "backend": "/dot/job-locker",
+      "method": "GET",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/job-locker",
+      "backend": "/dot/job-locker",
+      "method": "POST",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dot/job-locker/{key}",
+      "backend": "/dot/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://polkadot-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/btc/job-locker",
+      "backend": "/btc/job-locker",
+      "method": "GET",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/job-locker",
+      "backend": "/btc/job-locker",
+      "method": "POST",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/btc/job-locker/{key}",
+      "backend": "/btc/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://btc-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/bch/job-locker",
+      "backend": "/bch/job-locker",
+      "method": "GET",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/job-locker",
+      "backend": "/bch/job-locker",
+      "method": "POST",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/bch/job-locker/{key}",
+      "backend": "/bch/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://bch-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/ltc/job-locker",
+      "backend": "/ltc/job-locker",
+      "method": "GET",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/job-locker",
+      "backend": "/ltc/job-locker",
+      "method": "POST",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/ltc/job-locker/{key}",
+      "backend": "/ltc/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://ltc-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/dash/job-locker",
+      "backend": "/dash/job-locker",
+      "method": "GET",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/job-locker",
+      "backend": "/dash/job-locker",
+      "method": "POST",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/dash/job-locker/{key}",
+      "backend": "/dash/job-locker/{key}",
+      "method": "DELETE",
+      "host": ["http://dash-transactions.stage-local:8080"]
+    },
+
+    {
+      "endpoint": "/segwit-btc/job-locker",
+      "backend": "/segwit-btc/job-locker",
+      "method": "GET",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/job-locker",
+      "backend": "/segwit-btc/job-locker",
+      "method": "POST",
+      "host": ["http://segwit-transactions.stage-local:8080"]
+    },
+    {
+      "endpoint": "/segwit-btc/job-locker/{key}",
+      "backend": "/segwit-btc/job-locker/{key}",
+      "method": "DELETE",
+      "host": [
+        "http://segwit-transactions.stage-local:8080"
+      ]
     },
     {
       "endpoint": "/eth/get-pending-transfer/tech-wallet/replace",
