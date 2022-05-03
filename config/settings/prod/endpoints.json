@@ -1451,6 +1451,54 @@
       "backend": "/btc/network-fee/raw/current",
       "method": "GET",
       "host": ["http://segwit-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/hot-wallet/current/nonce",
+      "backend": "/eth/hot-wallet/current/nonce",
+      "method": "GET",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/tech-wallet/current/nonce",
+      "backend": "/eth/tech-wallet/current/nonce",
+      "method": "GET",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer/hot-wallet",
+      "backend": "/eth/get-pending-transfer/hot-wallet",
+      "method": "GET",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer/tech-wallet",
+      "backend": "/eth/get-pending-transfer/tech-wallet",
+      "method": "GET",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer/hot-wallet/replace",
+      "backend": "/eth/get-pending-transfer/hot-wallet/replace",
+      "method": "POST",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer/tech-wallet/replace",
+      "backend": "/eth/get-pending-transfer/tech-wallet/replace",
+      "method": "POST",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer/hot-wallet/cancel",
+      "backend": "/eth/get-pending-transfer/hot-wallet/cancel",
+      "method": "POST",
+      "host": ["http://eth-transactions.prod-local:8080"]
+    },
+    {
+      "endpoint": "/eth/get-pending-transfer/tech-wallet/cancel",
+      "backend": "/eth/get-pending-transfer/tech-wallet/cancel",
+      "method": "POST",
+      "host": ["http://eth-transactions.prod-local:8080"]
     }
   ]
 }
