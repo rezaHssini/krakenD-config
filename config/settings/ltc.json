@@ -1,0 +1,239 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "/ltc/addresses",
+      "backend": "/ltc/addresses",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/addresses/validate/{address}",
+      "backend": "/ltc/addresses/validate/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/addresses/check/{address}",
+      "backend": "/ltc/addresses/check/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/block/{id}",
+      "backend": "/ltc/block/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/block/actions/resync",
+      "backend": "/ltc/block/actions/resync",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/block/stats",
+      "backend": "/ltc/block/stats",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/transaction/{hash_block}",
+      "backend": "/ltc/transaction/{hash_block}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/consolidate",
+      "backend": "/ltc/consolidate",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/network-fee/ltc/assets/{token}",
+      "backend": "/ltc/network-fee/{token}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/network-fee/ltc/raw",
+      "backend": "/ltc/network-fee/raw/current",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/utxo",
+      "backend": "/ltc/utxo",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/tokens",
+      "backend": "/ltc/tokens",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/withdraw",
+      "backend": "/ltc/withdraw",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/alert",
+      "backend": "/ltc/hot-wallet-limits/alert",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/alert",
+      "backend": "/ltc/hot-wallet-limits/alert",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/block",
+      "backend": "/ltc/hot-wallet-limits/block",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet-limits/block",
+      "backend": "/ltc/hot-wallet-limits/block",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist",
+      "backend": "/ltc/withdraw-blacklist",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist",
+      "backend": "/ltc/withdraw-blacklist",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist/{address}",
+      "backend": "/ltc/withdraw-blacklist/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/withdraw-blacklist/{address}",
+      "backend": "/ltc/withdraw-blacklist/{address}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet",
+      "backend": "/ltc/hot-wallet",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/{address}",
+      "backend": "/ltc/hot-wallet/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/import",
+      "backend": "/ltc/hot-wallet/import",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/current/resources",
+      "backend": "/ltc/hot-wallet/current/resources",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/resources/{address}",
+      "backend": "/ltc/hot-wallet/resources/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/get-pending-transfer/transfers",
+      "backend": "/ltc/get-pending-transfer/transfers",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/get-pending-transfer/{id}",
+      "backend": "/ltc/get-pending-transfer/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/report",
+      "backend": "/ltc/report",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/get-transaction-info",
+      "backend": "/ltc/get-transaction-info",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/current/lock",
+      "backend": "/ltc/hot-wallet/current/lock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/hot-wallet/current/unlock",
+      "backend": "/ltc/hot-wallet/current/unlock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/job-locker",
+      "backend": "/ltc/job-locker",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/job-locker",
+      "backend": "/ltc/job-locker",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/job-locker/{key}",
+      "backend": "/ltc/job-locker/{key}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/ltc/mock-queue",
+      "backend": "/ltc/mock-queue",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/mock-queue/status/{key}",
+      "backend": "/ltc/mock-queue/status/{key}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/mock-queue/get-active-count",
+      "backend": "/ltc/mock-queue/get-active-count",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/parameters",
+      "backend": "/ltc/parameters",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/parameters/{name}",
+      "backend": "/ltc/parameters/{name}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/parameters/admin/get",
+      "backend": "/ltc/parameters/admin/get",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/parameters/admin/update",
+      "backend": "/ltc/parameters/admin/update",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/pending-pool/send-mock-info",
+      "backend": "/ltc/pending-pool/send-mock-info",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/ltc/nomination/{id}",
+      "backend": "/ltc/nomination/{id}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/ltc/nomination",
+      "backend": "/ltc/nomination",
+      "method": "PUT"
+    }
+  ]
+}
