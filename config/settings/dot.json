@@ -1,0 +1,209 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "/dot/addresses",
+      "backend": "/dot/addresses",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/addresses/validate/{address}",
+      "backend": "/dot/addresses/validate/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/addresses/check/{address}",
+      "backend": "/dot/addresses/check/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/block/{id}",
+      "backend": "/dot/block/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/block/actions/resync",
+      "backend": "/dot/block/actions/resync",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/block/stats",
+      "backend": "/dot/block/stats",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/transaction/{hash_block}",
+      "backend": "/dot/transaction/{hash_block}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/consolidate",
+      "backend": "/dot/consolidate",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/network-fee/dot/assets/{token}",
+      "backend": "/dot/network-fee/{token}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/tokens",
+      "backend": "/dot/tokens",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/withdraw",
+      "backend": "/dot/withdraw",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/alert",
+      "backend": "/dot/hot-wallet-limits/alert",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/alert",
+      "backend": "/dot/hot-wallet-limits/alert",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/block",
+      "backend": "/dot/hot-wallet-limits/block",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/hot-wallet-limits/block",
+      "backend": "/dot/hot-wallet-limits/block",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist",
+      "backend": "/dot/withdraw-blacklist",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist",
+      "backend": "/dot/withdraw-blacklist",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist/{address}",
+      "backend": "/dot/withdraw-blacklist/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/withdraw-blacklist/{address}",
+      "backend": "/dot/withdraw-blacklist/{address}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/dot/hot-wallet",
+      "backend": "/dot/hot-wallet",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/hot-wallet/{address}",
+      "backend": "/dot/hot-wallet/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/hot-wallet/import",
+      "backend": "/dot/hot-wallet/import",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/hot-wallet/current/resources",
+      "backend": "/dot/hot-wallet/current/resources",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/hot-wallet/resources/{address}",
+      "backend": "/dot/hot-wallet/resources/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/get-pending-transfer/transfers",
+      "backend": "/dot/get-pending-transfer/transfers",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/get-pending-transfer/{id}",
+      "backend": "/dot/get-pending-transfer/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/report",
+      "backend": "/dot/report",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/get-transaction-info",
+      "backend": "/dot/get-transaction-info",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/hot-wallet/current/lock",
+      "backend": "/dot/hot-wallet/current/lock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/hot-wallet/current/unlock",
+      "backend": "/dot/hot-wallet/current/unlock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/job-locker",
+      "backend": "/dot/job-locker",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/job-locker",
+      "backend": "/dot/job-locker",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/job-locker/{key}",
+      "backend": "/dot/job-locker/{key}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/dot/mock-queue",
+      "backend": "/dot/mock-queue",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/mock-queue/status/{key}",
+      "backend": "/dot/mock-queue/status/{key}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/mock-queue/get-active-count",
+      "backend": "/dot/mock-queue/get-active-count",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/parameters",
+      "backend": "/dot/parameters",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/parameters/{name}",
+      "backend": "/dot/parameters/{name}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/parameters/admin/get",
+      "backend": "/dot/parameters/admin/get",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/dot/parameters/admin/update",
+      "backend": "/dot/parameters/admin/update",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/dot/pending-pool/send-mock-info",
+      "backend": "/dot/pending-pool/send-mock-info",
+      "method": "POST"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "/btc/addresses",
+      "backend": "/btc/addresses",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/addresses/validate/{address}",
+      "backend": "/btc/addresses/validate/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/addresses/check/{address}",
+      "backend": "/btc/addresses/check/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/block/{id}",
+      "backend": "/btc/block/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/block/actions/resync",
+      "backend": "/btc/block/actions/resync",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/block/stats",
+      "backend": "/btc/block/stats",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/transaction/{hash_block}",
+      "backend": "/btc/transaction/{hash_block}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/consolidate",
+      "backend": "/btc/consolidate",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/network-fee/btc/assets/{token}",
+      "backend": "/btc/network-fee/{token}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/network-fee/btc/raw",
+      "backend": "/btc/network-fee/raw/current",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/utxo",
+      "backend": "/btc/utxo",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/tokens",
+      "backend": "/btc/tokens",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/withdraw",
+      "backend": "/btc/withdraw",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/alert",
+      "backend": "/btc/hot-wallet-limits/alert",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/alert",
+      "backend": "/btc/hot-wallet-limits/alert",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/block",
+      "backend": "/btc/hot-wallet-limits/block",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/hot-wallet-limits/block",
+      "backend": "/btc/hot-wallet-limits/block",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist",
+      "backend": "/btc/withdraw-blacklist",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist",
+      "backend": "/btc/withdraw-blacklist",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist/{address}",
+      "backend": "/btc/withdraw-blacklist/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/withdraw-blacklist/{address}",
+      "backend": "/btc/withdraw-blacklist/{address}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/btc/hot-wallet",
+      "backend": "/btc/hot-wallet",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/hot-wallet/{address}",
+      "backend": "/btc/hot-wallet/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/hot-wallet/import",
+      "backend": "/btc/hot-wallet/import",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/hot-wallet/current/resources",
+      "backend": "/btc/hot-wallet/current/resources",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/hot-wallet/resources/{address}",
+      "backend": "/btc/hot-wallet/resources/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/get-pending-transfer/transfers",
+      "backend": "/btc/get-pending-transfer/transfers",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/get-pending-transfer/{id}",
+      "backend": "/btc/get-pending-transfer/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/report",
+      "backend": "/btc/report",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/get-transaction-info",
+      "backend": "/btc/get-transaction-info",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/hot-wallet/current/lock",
+      "backend": "/btc/hot-wallet/current/lock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/hot-wallet/current/unlock",
+      "backend": "/btc/hot-wallet/current/unlock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/job-locker",
+      "backend": "/btc/job-locker",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/job-locker",
+      "backend": "/btc/job-locker",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/job-locker/{key}",
+      "backend": "/btc/job-locker/{key}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/btc/mock-queue",
+      "backend": "/btc/mock-queue",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/mock-queue/status/{key}",
+      "backend": "/btc/mock-queue/status/{key}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/mock-queue/get-active-count",
+      "backend": "/btc/mock-queue/get-active-count",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/parameters",
+      "backend": "/btc/parameters",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/parameters/{name}",
+      "backend": "/btc/parameters/{name}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/parameters/admin/get",
+      "backend": "/btc/parameters/admin/get",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/parameters/admin/update",
+      "backend": "/btc/parameters/admin/update",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/pending-pool/send-mock-info",
+      "backend": "/btc/pending-pool/send-mock-info",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc/nomination/{id}",
+      "backend": "/btc/nomination/{id}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/btc/nomination",
+      "backend": "/btc/nomination",
+      "method": "PUT"
+    }
+  ]
+}

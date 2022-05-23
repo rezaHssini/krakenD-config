@@ -8,10 +8,11 @@
     "cache_ttl": "30s",
     "port":"8080",
     "endpoints": [
-        {{ range $idx, $endpoint := .endpoints.endpoints_group }}
+        {{ range $idx, $endpoint := .eth.endpoints }}
         {{if $idx}},{{end}}
         {
         "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
         "method":"{{ $endpoint.method }}",
         "output_encoding": "no-op",
         "backend": [
@@ -19,7 +20,175 @@
                 "url_pattern": "{{ $endpoint.backend }}",
                 "method":"{{ $endpoint.method }}",
                 "encoding": "no-op",
-                "host":"{{ $endpoint.host }}",
+                "host":{{ include "eth_address.tmpl" }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+        ,
+        {{ range $idx, $endpoint := .trx.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "trx_address.tmpl" }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+        ,
+        {{ range $idx, $endpoint := .xrp.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "xrp_address.tmpl" }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }} 
+        ,
+        {{ range $idx, $endpoint := .dot.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "dot_address.tmpl" }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}       
+        ,
+        {{ range $idx, $endpoint := .btc.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "btc_address.tmpl" }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+        ,
+        {{ range $idx, $endpoint := .ltc.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "ltc_address.tmpl"  }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }} 
+        ,
+        {{ range $idx, $endpoint := .dash.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "dash_address.tmpl"  }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+        ,
+        {{ range $idx, $endpoint := .bch.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "bch_address.tmpl"  }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+        ,
+        {{ range $idx, $endpoint := .segwit_btc.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "segwit_btc_address.tmpl"  }},
                 "extra_config": {
                     {{ include "rate_limit_backend.tmpl" }}
                 }
@@ -34,11 +203,51 @@
             "krakend-basic-auth": {
                 "htpasswd_path": "{{ .service.path_to_htpasswd }}",
                 "endpoints": [
-                    {{ range $idx, $endpoint := .endpoints.endpoints_group }}
+                    {{ range $idx, $endpoint := .eth.endpoints }}
                     {{if $idx}},{{end}}
                     "{{ $endpoint.backend }}"
                     {{ end }}
-                    ]
+                    ,
+                    {{ range $idx, $endpoint := .trx.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .xrp.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .dot.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .btc.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .ltc.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .bch.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .dash.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .segwit_btc.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                ]
             }  
        }
     }
