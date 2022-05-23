@@ -1,0 +1,239 @@
+{
+  "endpoints":[
+    {
+      "endpoint": "/btc-segwit/addresses",
+      "backend": "/btc-segwit/addresses",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/addresses/validate/{address}",
+      "backend": "/btc-segwit/addresses/validate/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/addresses/check/{address}",
+      "backend": "/btc-segwit/addresses/check/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/block/{id}",
+      "backend": "/btc-segwit/block/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/block/actions/resync",
+      "backend": "/btc-segwit/block/actions/resync",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/block/stats",
+      "backend": "/btc-segwit/block/stats",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/transaction/{hash_block}",
+      "backend": "/btc-segwit/transaction/{hash_block}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/consolidate",
+      "backend": "/btc-segwit/consolidate",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/network-fee/btc-segwit/assets/{token}",
+      "backend": "/btc-segwit/network-fee/{token}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/network-fee/btc-segwit/raw",
+      "backend": "/btc-segwit/network-fee/raw/current",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/utxo",
+      "backend": "/btc-segwit/utxo",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/tokens",
+      "backend": "/btc-segwit/tokens",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/withdraw",
+      "backend": "/btc-segwit/withdraw",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet-limits/alert",
+      "backend": "/btc-segwit/hot-wallet-limits/alert",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet-limits/alert",
+      "backend": "/btc-segwit/hot-wallet-limits/alert",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet-limits/block",
+      "backend": "/btc-segwit/hot-wallet-limits/block",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet-limits/block",
+      "backend": "/btc-segwit/hot-wallet-limits/block",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/withdraw-blacklist",
+      "backend": "/btc-segwit/withdraw-blacklist",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/withdraw-blacklist",
+      "backend": "/btc-segwit/withdraw-blacklist",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/withdraw-blacklist/{address}",
+      "backend": "/btc-segwit/withdraw-blacklist/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/withdraw-blacklist/{address}",
+      "backend": "/btc-segwit/withdraw-blacklist/{address}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet",
+      "backend": "/btc-segwit/hot-wallet",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet/{address}",
+      "backend": "/btc-segwit/hot-wallet/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet/import",
+      "backend": "/btc-segwit/hot-wallet/import",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet/current/resources",
+      "backend": "/btc-segwit/hot-wallet/current/resources",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet/resources/{address}",
+      "backend": "/btc-segwit/hot-wallet/resources/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/get-pending-transfer/transfers",
+      "backend": "/btc-segwit/get-pending-transfer/transfers",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/get-pending-transfer/{id}",
+      "backend": "/btc-segwit/get-pending-transfer/{id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/report",
+      "backend": "/btc-segwit/report",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/get-transaction-info",
+      "backend": "/btc-segwit/get-transaction-info",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet/current/lock",
+      "backend": "/btc-segwit/hot-wallet/current/lock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/hot-wallet/current/unlock",
+      "backend": "/btc-segwit/hot-wallet/current/unlock",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/job-locker",
+      "backend": "/btc-segwit/job-locker",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/job-locker",
+      "backend": "/btc-segwit/job-locker",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/job-locker/{key}",
+      "backend": "/btc-segwit/job-locker/{key}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/btc-segwit/mock-queue",
+      "backend": "/btc-segwit/mock-queue",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/mock-queue/status/{key}",
+      "backend": "/btc-segwit/mock-queue/status/{key}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/mock-queue/get-active-count",
+      "backend": "/btc-segwit/mock-queue/get-active-count",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/parameters",
+      "backend": "/btc-segwit/parameters",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/parameters/{name}",
+      "backend": "/btc-segwit/parameters/{name}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/parameters/admin/get",
+      "backend": "/btc-segwit/parameters/admin/get",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/parameters/admin/update",
+      "backend": "/btc-segwit/parameters/admin/update",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/pending-pool/send-mock-info",
+      "backend": "/btc-segwit/pending-pool/send-mock-info",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/nomination",
+      "backend": "/btc-segwit/nomination",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/btc-segwit/nomination",
+      "backend": "/btc-segwit/nomination",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/btc-segwit/nomination/{id}",
+      "backend": "/btc-segwit/nomination/{id}",
+      "method": "DELETE"
+    },
+    {
+      "endpoint": "/btc-segwit/nomination",
+      "backend": "/btc-segwit/nomination",
+      "method": "PUT"
+    }
+  ]
+}

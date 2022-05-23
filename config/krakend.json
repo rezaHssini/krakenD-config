@@ -176,7 +176,7 @@
         }
         {{ end }}
         ,
-        {{ range $idx, $endpoint := .segwit_btc.endpoints }}
+        {{ range $idx, $endpoint := .btc_segwit.endpoints }}
         {{if $idx}},{{end}}
         {
         "endpoint": "{{ $endpoint.endpoint }}",
@@ -188,7 +188,28 @@
                 "url_pattern": "{{ $endpoint.backend }}",
                 "method":"{{ $endpoint.method }}",
                 "encoding": "no-op",
-                "host":{{ include "segwit_btc_address.tmpl"  }},
+                "host":{{ include "btc_segwit_address.tmpl"  }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+        ,
+        {{ range $idx, $endpoint := .ltc_segwit.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "ltc_segwit_address.tmpl"  }},
                 "extra_config": {
                     {{ include "rate_limit_backend.tmpl" }}
                 }
@@ -243,7 +264,12 @@
                     "{{ $endpoint.backend }}"
                     {{ end }}
                     ,
-                    {{ range $idx, $endpoint := .segwit_btc.endpoints }}
+                    {{ range $idx, $endpoint := .btc_segwit.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
+                    ,
+                    {{ range $idx, $endpoint := .ltc_segwit.endpoints }}
                     {{if $idx}},{{end}}
                     "{{ $endpoint.backend }}"
                     {{ end }}
