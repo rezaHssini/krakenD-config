@@ -1,0 +1,24 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "/spot-wallet/addresses",
+      "backend": "/spot-wallet/addresses",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/spot-wallet/addresses/{coin_or_user}/{address}",
+      "backend": "/spot-wallet/addresses/{coin_or_user}/{address}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
+      "backend": "/spot-wallet/addresses/{coin_or_user}/user/{user_id}",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/spot-wallet/addresses/{coin_or_user}",
+      "backend": "/spot-wallet/addresses/{coin_or_user}",
+      "method": "GET"
+    }
+  ]
+}

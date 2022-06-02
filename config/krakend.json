@@ -8,6 +8,27 @@
     "cache_ttl": "30s",
     "port":"8080",
     "endpoints": [
+        {{ range $idx, $endpoint := .spot_wallet.endpoints }}
+        {{if $idx}},{{end}}
+        {
+        "endpoint": "{{ $endpoint.endpoint }}",
+        "input_query_strings":["*"],
+        "method":"{{ $endpoint.method }}",
+        "output_encoding": "no-op",
+        "backend": [
+            {
+                "url_pattern": "{{ $endpoint.backend }}",
+                "method":"{{ $endpoint.method }}",
+                "encoding": "no-op",
+                "host":{{ include "spot_wallet_address.tmpl" }},
+                "extra_config": {
+                    {{ include "rate_limit_backend.tmpl" }}
+                }
+            }
+          ]
+        }
+        {{ end }}
+,
         {{ range $idx, $endpoint := .eth.endpoints }}
         {{if $idx}},{{end}}
         {
@@ -273,7 +294,11 @@
                     {{if $idx}},{{end}}
                     "{{ $endpoint.backend }}"
                     {{ end }}
-
+                    ,
+                    {{ range $idx, $endpoint := .spot_wallet.endpoints }}
+                    {{if $idx}},{{end}}
+                    "{{ $endpoint.backend }}"
+                    {{ end }}
                 ]
             }  
        }
